@@ -1,14 +1,7 @@
-# version: '3.8'
-
+# version: "3.9"
 services:
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: ./infra/php
     volumes:
-      - .:/var/www
-    working_dir: /var/www/laravel
-    ports:
-      - "8000:8000"
-    command: php artisan serve --host=0.0.0.0 --port=8000
+      - ./src:/data
 
