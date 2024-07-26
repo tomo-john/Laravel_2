@@ -5,7 +5,7 @@ services:
     container_name: "mysql_test"
     environment:
         MYSQL_ROOT_PASSWORD: root
-        MYSQL_DATABASE: mysql_test_db
+        MYSQL_DATABASE: mysql_db
         MYSQL_USER: admin
         MYSQL_PASSWORD: admin
         TZ: 'Asia/Tokyo'
