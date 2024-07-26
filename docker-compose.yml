@@ -48,7 +48,7 @@ services:
       - PMA_ARBITRARY=1 # サーバ設定：サーバーをローカル以外も指定
       - PMA_HOST=db # ホスト設定：dbを指定
       - PMA_USER=admin # 初期ユーザー設定：adminを指定
-      - PMA_PASSWORD=secret # 初期PW設定：secretを指定
+      - PMA_PASSWORD=admin # 初期PW設定：secretを指定 => adminへ変更
     # db（サービス名）とのリンクを設定する
     links:
       - db
