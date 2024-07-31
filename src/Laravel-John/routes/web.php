@@ -18,5 +18,9 @@ Route::get('/', function () {
     return view('home');
 });
 
+
 Route::get('/memos', [MemoController::class, 'index'])->name('memos.index');
+
+Route::get('/memos/create', [MemoController::class, 'create'])->name('memos.create');
+Route::post('/memos', [MemoController::class, 'store'])->name('memos.store');
 
